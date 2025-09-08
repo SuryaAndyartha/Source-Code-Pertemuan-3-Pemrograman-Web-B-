@@ -193,3 +193,89 @@
 </body>
 </html>
 ```
+
+
+
+```
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Membuat Frame</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "nav nav"
+        "sidebar content"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 50px 1fr 50px;
+      height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background: #b4ccac;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid white;
+    }
+
+    nav {
+      grid-area: nav;
+      background: #b4ccac;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid white;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background: #b4ccac;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      border: 1px solid white;
+    }
+
+    main {
+      grid-area: content;
+      background: #b4ccac;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      border: 1px solid white;
+    }
+
+    footer {
+      grid-area: footer;
+      background: #b4ccac;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>Header</header>
+    <nav>Menu Navigasi</nav>
+    <aside>Sidebar</aside>
+    <main>Content</main>
+    <footer>Footer</footer>
+  </div>
+
+</body>
+</html>
+```
